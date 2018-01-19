@@ -1,0 +1,61 @@
+html, body{
+    margin:0;padding:0;
+    font-family:"맑은 고딕", "Malgun Gothic", "Apple SD Gothic Neo", AppleGothic, sans-serif;
+    font-size:14px;
+    color:#666;
+}
+dl, dt, dd, ul, ol, li, h1, h2, h3, h4, h5, h6, pre, form, fieldset, input, button, textarea, p, blockquote, tbody, tfoot, thead, th, td{
+    margin:0;padding:0;
+}
+input, textarea, select, td, th{
+    font-size:14px;
+}
+table{
+    border-spacing:0;border-collapse:collapse;
+}
+ol, ul , li{
+    list-style:none;
+}
+h1, h2, h3, h4, h5, h6{
+    font-size:100%;
+    font-weight:normal;
+}
+hr, legend, caption{
+    position:absolute;top:0;left:-1000em;
+    visibility:hidden;overflow:hidden;
+    line-height:0.1%;
+    font-size:0.1%;
+    width:0.1%;height:0.1%;
+}
+img{vertical-align:top;}
+img, fieldset{border:0 none;}
+label{cursor:pointer;}
+button{border:0;cursor:pointer;}
+input, button, textarea, select{font-size:14px;font-family:"맑은 고딕", "Malgun Gothic", "Apple SD Gothic Neo", AppleGothic, sans-serif;background:transparent;}
+
+a{color:#000;text-decoration:none;}
+a:link, a:visited{color:#686868;text-decoration:none;}
+a:hover{text-decoration:none;}
+a:active{text-decoration:none;}
+
+.wrap{min-width:400px;}
+
+.box-calculator{margin:50px auto 0;width:400px;border:2px solid #969895;background:#f8f7fd;border-radius:10px;box-sizing:border-box;}
+.box-calculator .calculator{position:relative;padding:60px 20px 30px;box-sizing:border-box;}
+.calculator .name{position:absolute;left:0;top:0;padding:20px;color:#000;font-size:22px;font-weight:bold;line-height:1;}
+.calculator .box-visual{margin-bottom:30px;background:#d5e3e4;border-radius:10px;}
+.calculator .box-visual .process{padding:5px 20px 0;min-height:30px;border:1px solid #2b617d;border-bottom:0;font-size:16px;line-height:1.25;text-align:right;word-break:break-all;border-radius:10px 10px 0 0;box-sizing:border-box;}
+.calculator .box-visual .ipt_num{padding:0 20px;width:100%;height:60px;border:1px solid #2b617d;border-top:0;font-family:Arial, sans-serif;font-size:28px;font-weight:bold;line-height:2.14;text-align:right;border-radius:0 0 10px 10px;box-sizing:border-box;ime-mode:disabled;}
+.calculator .btn{height:60px;}
+.calculator .box-btn,
+.calculator .btn{font-size:0;}
+.calculator .btn > button{height:100%;font-family:Arial, sans-serif;font-size:28px;font-weight:bold;vertical-align:top;}
+.calculator .box-btn .btn-num{width:60%;border-right:1px solid #969895;border-bottom:1px solid #969895;}
+.calculator .box-btn .btn-num .btn > button{width:33.3%;color:#5292ad;background:#fffaf6;border-left:1px solid #969895;border-top:1px solid #969895;}
+.calculator .box-btn .btn-num .btn > button:first-child{width:33.4%;}
+.calculator .box-btn .btn-num .btn > button.btn-zero{width:66.7%;}
+.calculator .box-btn .btn-cal{margin-left:10%;width:30%;border-right:1px solid #134752;border-bottom:1px solid #134752;}
+.calculator .box-btn .btn-cal .btn > button{width:50%;color:#fff;background:#5292ad;border-left:1px solid #134752;border-top:1px solid #134752;}
+.calculator .box-btn .btn-cal .btn > button.btn-clear{background:#263846;}
+.calculator .box-btn .btn-num,
+.calculator .box-btn .btn-cal{display:inline-block;vertical-align:top;box-sizing:border-box;}

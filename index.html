@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>계산기</title>
+    <link rel="stylesheet" href="./css/style.css">
+    <script src="./js/calculator.js"></script>
+  </head>
+  <body>
+    <div class="wrap">
+
+      <div class="box-calculator">
+        <div class="calculator">
+          <h1 class="name">CCLT</h1>
+
+          <div class="box-visual">
+            <div class="process"><p id="process_num">&nbsp;</p></div>
+            <input type="text" id="ipt_num" class="ipt_num" onkeydown="return onlyNumber(event)" onkeyup="removeChar(event)">
+          </div>
+
+          <div class="box-btn">
+            <div class="btn-num">
+              <div class="btn">
+                <button type="button" onclick="btnNum(this);">7</button>
+                <button type="button" onclick="btnNum(this);">8</button>
+                <button type="button" onclick="btnNum(this);">9</button>
+              </div>
+
+              <div class="btn">
+                <button type="button" onclick="btnNum(this);">4</button>
+                <button type="button" onclick="btnNum(this);">5</button>
+                <button type="button" onclick="btnNum(this);">6</button>
+              </div>
+
+              <div class="btn">
+                <button type="button" onclick="btnNum(this);">1</button>
+                <button type="button" onclick="btnNum(this);">2</button>
+                <button type="button" onclick="btnNum(this);">3</button>
+              </div>
+
+              <div class="btn">
+                <button type="button" class="btn-zero" onclick="btnNum(this);">0</button>
+                <button type="button" onclick="btnCal(this);">.</button>
+              </div>
+            </div>
+
+            <div class="btn-cal">
+              <div class="btn">
+                <button type="button" onclick="btnCal(this);">+</button>
+                <button type="button" class="btn-clear" onclick="btnCal(this);">C</button>
+              </div>
+
+              <div class="btn">
+                <button type="button" onclick="btnCal(this);">-</button>
+                <button type="button" onclick="btnCal(this);">=</button>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+
+    </div>
+  </body>
+</html>
